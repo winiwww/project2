@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link cdn tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- link cdn icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              xs: "375px", // Menambahkan breakpoint 'xs'
+              sm: "640px",
+              md: "768px",
+              lg: "1024px",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body class="bg-stone-950 bg-gradient-to-t from-gray-300 to-cyan-700">
+    <div class="m-10 h-auto">
+      <div class="xs:w-full md:w-full lg:w-full sm:w-full">
+        <h1
+          class="sofia font-bold lg:text-5xl md:text-4xl sm:text-3xl xs:text-3xl xs:w-full text-gray-200"
+          style="filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.4))"
+        >
+          Menu Spesial Di Hari Libur
+        </h1>
+        <h2
+          class="font-bold text-3xl mt-10 text-amber-500"
+          style="filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.4))"
+        >
+          Beli 2 Gratis 1
+        </h2>
+        <h3
+          class="font-bold text-2xl mt-10 text-gray-200"
+          style="filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.4))"
+        >
+          Untuk Pembelian Di Hari Minggu
+        </h3>
+      </div>
+
+      <div
+        class="md:flex md:items-center md:p-15 md:space-x-6 sm:mt-10 md:justify-evenly xs:pb-24"
+      >
+        <div
+          class="bg-transparent lg:h-[400px] lg:w-[400px] md:h-[300px] md:w-[300px] sm:h-[200px] sm:w-[200px] xs:h-[150px] xs:w-[150px] xs:mt-6 rounded-full bg-[url('../img/15.jpg')] bg-cover bg-center bg-no-repeat shadow-lg shadow-stone-500 shadow-bl"
+        ></div>
+
+        <div class="mx-auto">
+          <button
+            class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded mt-10 text-lg xs:text-sm sm:text-sm md:text-md lg:text-lg xs:ml-4 sm:ml-10 md:ml-0"
+            style="filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.4))"
+          >
+            <a href="">Pesan Sekarang</a>
+          </button>
+          <div
+            class="font-bold text-xl text-gray-200 space-y-4 mt-10 cookie"
+            style="filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.4))"
+          >
+            <p>winiulantari@gmail.com</p>
+            <p>+62 877-597-005-56</p>
+            <p>Montong Gading., Lombok Timur</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <footer class="text-center p-2">&copy;copyright 2025</footer>
+  </body>
+</html>
